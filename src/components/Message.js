@@ -1,10 +1,10 @@
-function Message({title, message}){
+function Message({ title, message }) {
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{message}</p>
+    <div className="m-32 p-10 bg-white rounded-lg">
+      <h2 className="text-black font-bold">{title}</h2>
+      <p className="text-black font-bold">{message}</p>
     </div>
-  )
+  );
 }
 
 export default Message;

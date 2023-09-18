@@ -1,11 +1,13 @@
-function Card({img, title, description}) {
-    return (
-        <div className="bg-white p-5 flex flex-col">
-            <img src={img} title="" alt="" className="mb-5" />
-            <h3 className="font-bold mb-5">{title}</h3>
-            <p>{description}</p>
-        </div>
-    )
-  }
-  
-  export default Card;
+function Card({ img, title, description, url }) {
+  return (
+    <a href={url} target="_blank" className="h-full">
+      <div className="bg-white p-5 flex flex-col hover:bg-gray-100 hover:shadow-md h-full">
+        <img src={img} alt={title} className="mb-5" />
+        <h3 className="font-bold mb-5">{title}</h3>
+        <p>{description}</p>
+      </div>
+    </a>
+  );
+}
+
+export default Card;
