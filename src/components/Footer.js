@@ -1,11 +1,16 @@
 import React from "react";
+import cv from "../assets/pdf/Eric_CV_23.pdf";
 
 export const Footer = () => {
   return (
     <footer id="footer" className="p-10">
       <ul className="icons flex justify-center gap-2 mb-5">
         <li>
-          <a href="#" className="block p-3 bg-blue-500 rounded-md">
+          <a
+            href="https://www.facebook.com/profile.php?id=1071394585"
+            target="_blank"
+            className="group-hover/ block p-3 bg-blue-500 rounded-md"
+          >
             <svg
               className="fill-white hover:fill-black"
               xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +23,11 @@ export const Footer = () => {
         </li>
 
         <li>
-          <a href="#" className="block p-3 bg-blue-500 rounded-md">
+          <a
+            href="https://www.linkedin.com/in/eric-gaona-medina-5a0486143/"
+            target="_blank"
+            className="block p-3 bg-blue-500 rounded-md"
+          >
             <svg
               className="fill-white hover:fill-black"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +39,11 @@ export const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="block p-3 bg-blue-500 rounded-md">
+          <a
+            href="https://github.com/EricGaona"
+            target="_blank"
+            className="block p-3 bg-blue-500 rounded-md"
+          >
             <svg
               className="fill-white hover:fill-black"
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +55,11 @@ export const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="block p-3 bg-blue-500 rounded-md">
+          <a
+            href={cv}
+            target="_blank"
+            className="block p-3 bg-blue-500 rounded-md"
+          >
             <svg
               className="fill-white hover:fill-black"
               xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import cv from "../assets/pdf/Eric_CV_23.pdf";
 function Header() {
   // Arriba
   // Derecha
@@ -8,26 +8,30 @@ function Header() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   // padding: 10px 5px 2px 1px
   const scrollToElement = (event) => {
-    event.preventDefault();
-    const target = event.target.getAttribute("href");
-    const element = document.querySelector(target);
-    console.log("target", target);
-    console.log("element", element);
-    if (element) {
-      const distance = element.getBoundingClientRect().top;
-      console.log("distance", distance);
-      window.scrollTo({
-        top: distance,
-        behavior: "smooth", // Hace que el desplazamiento sea suave
-      });
-    }
+    //   event.preventDefault();
+    //   const target = event.target.getAttribute("href");
+    //   const element = document.querySelector(target);
+    //   console.log("target", target);
+    //   console.log("element", element);
+    //   if (element) {
+    //     const distance = element.getBoundingClientRect().top;
+    //     console.log("distance", distance);
+    //     window.scrollTo({
+    //       top: distance,
+    //       behavior: "smooth", // Hace que el desplazamiento sea suave
+    //     });
+    //   }
     setIsShowMenu(false);
   };
 
   return (
     <header className="fixed px-10 py-5 bg-blue-500 w-full z-20">
       <div className="container mx-auto flex justify-between">
-        <div className="text-white font-bold">MyPortfolio</div>
+        <div className="text-white font-bold">
+          <a href="#hero" onClick={scrollToElement}>
+            MyPortfolio
+          </a>
+        </div>
         <button
           data-collapse-toggle="navbar-hamburger"
           type="button"
@@ -76,7 +80,9 @@ function Header() {
               </a>
             </li>
             <li className="text-slate-300 hover:text-white font-bold">
-              <a href="#cv">CV</a>
+              <a href={cv} target="_blank">
+                CV
+              </a>
             </li>
           </ul>
         </nav>

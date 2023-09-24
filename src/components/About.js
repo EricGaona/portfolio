@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="my-10">
+    <section id="about" className="pt-24">
       <h2 className="font-bold text-2xl mb-3">About</h2>
       <div className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow p-10 gap-5">
         <div className="order-last md:order-first">
