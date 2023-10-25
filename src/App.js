@@ -48,12 +48,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Example>
-        <p>
-          Hello <span>World!</span>
-        </p>
-        <p>Goodbye</p>
-      </Example>
       <Hero />
       <div className="container mx-auto">
         <About />

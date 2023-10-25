@@ -1,16 +1,15 @@
-import axios from 'axios';
+import axios from "axios";
 
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+axios.defaults.headers.post["Content-Type"] = "application/json";
 
-// const EMAIL_BASE = "vohobana@mailgolem.com";
 const EMAIL_BASE = "ericgaona0413@gmail.com";
 
-function sendEmail({name, email, message}){
+function sendEmail({ name, email, message }) {
   return axios.post(`https://formsubmit.co/ajax/${EMAIL_BASE}`, {
     name,
     email,
-    message
+    message,
   });
 }
 
-export {sendEmail};
+export { sendEmail };

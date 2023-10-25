@@ -23,10 +23,10 @@ function Contact() {
 
   const onChange = (token) => {
     if (token) {
-      console.log("Todo bien");
+      //  console.log("Todo bien");
       setIsRobot(false);
     } else {
-      console.log("Eres un robot");
+      //  console.log("Eres un robot");
       setIsRobot(true);
     }
   };
@@ -38,10 +38,10 @@ function Contact() {
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .required("Name is required")
-      .trim("El nombre tiene espacios")
+      .trim("Remove the space at the beginning")
       .strict(true),
     email: Yup.string().required("Email is required").email("Email is invalid"),
-    message: Yup.string().required("El mensaje es requirido"),
+    message: Yup.string().required("Message is required"),
   });
 
   const formOptions = { resolver: yupResolver(validationSchema) };
@@ -161,12 +161,15 @@ function Contact() {
         )}
         {success && (
           <Message
-            title={`Mensaje enviado correctamente a ${name}`}
-            message="Pronto tendrás una respuesta"
+            title={`Thanks for your message ${name}`}
+            message="We will get back to you as soon as possible!"
           />
         )}
         {error && (
-          <Message title="El mensaje no envió" message="Hubo un error" />
+          <Message
+            title="Unable to send Email."
+            message="Please try again later!"
+          />
         )}
       </div>
     </section>

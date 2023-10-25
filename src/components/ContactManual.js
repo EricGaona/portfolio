@@ -24,7 +24,7 @@ function Contact() {
 
   const sendForm = async (e) => {
     e.preventDefault();
-    console.log("Enviando formulario", name, email);
+    // console.log("Enviando formulario", name, email);
 
     if (!validEmail(email)) {
       setErrorEmail(true);
@@ -68,20 +68,12 @@ function Contact() {
     }
   }, [name, email, message, isRobot]);
 
-  // Validación
-  // const hola = success ? 'hola' : 'Que tal';
-
-  /* 
-      Recaptcha -> Botón desabilitado si no hemos palomeado el campo.
-      Click en el botón Enviar y que no se envié hasta que hayamos palomeado.
-    */
-
   const onChange = (token) => {
     if (token) {
-      console.log("Todo bien");
+      //  console.log("Todo bien");
       setIsRobot(false);
     } else {
-      console.log("Eres un robot");
+      //  console.log("Eres un robot");
       setIsRobot(true);
     }
   };
@@ -135,6 +127,7 @@ function Contact() {
             </button>
           </div>
         )}
+
         {success && (
           <Message
             title="Mensaje enviado correctamente"
@@ -148,5 +141,4 @@ function Contact() {
     </section>
   );
 }
-
 export default Contact;
