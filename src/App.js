@@ -7,7 +7,6 @@ import Works from "./components/Works";
 import ContactManual from "./components/ContactManual";
 import ContactLib from "./components/ContactLib";
 import { Footer } from "./components/Footer";
-import Example from "./components/Example";
 import { useState, useEffect, createRef } from "react";
 
 function App() {
