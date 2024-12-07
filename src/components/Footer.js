@@ -1,7 +1,11 @@
 import React from "react";
-import cv from "../assets/pdf/Eric_CV_23.pdf";
+import cv from "../assets/pdf/Eric_CV.pdf";
 
 export const Footer = () => {
+  // console.log(Date);
+  let fecha = new Date();
+  // console.log(fecha.getFullYear());
+
   return (
     <footer id="footer" className="p-10">
       <ul className="icons flex justify-center gap-2 mb-5">
@@ -71,7 +75,7 @@ export const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className="font-bold">ericgaona.com Copyright © 2023.</p>
+      <p className="font-bold">ericgaona.com Copyright © {fecha.getFullYear()}.</p>
     </footer>
   );
 };

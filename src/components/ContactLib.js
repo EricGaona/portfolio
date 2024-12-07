@@ -38,7 +38,7 @@ function Contact() {
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .required("Name is required")
-      .trim("Remove the space at the beginning")
+      .trim("Remove the space at the beginning or end")
       .strict(true),
     email: Yup.string().required("Email is required").email("Email is invalid"),
     message: Yup.string().required("Message is required"),
@@ -95,7 +95,7 @@ function Contact() {
               <input
                 type="text"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="Nombre"
+                placeholder="Name"
                 {...register("name")}
               />
               {errors.name && (
@@ -112,7 +112,7 @@ function Contact() {
               )}
               <textarea
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Mensaje"
+                placeholder="Message"
                 {...register("message")}
               ></textarea>
               {errors.message && (
@@ -127,7 +127,7 @@ function Contact() {
                 type="submit"
                 className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`}
               >
-                Enviar
+                Send
               </button>
             </div>
           </form>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import cv from "../assets/pdf/Eric_CV_23.pdf";
+import cv from "../assets/pdf/Eric_CV.pdf";
 function Header() {
   // Arriba
   // Derecha
