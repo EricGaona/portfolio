@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="h-[calc(100vh)] bg-red-200
+      className="h-[calc(100vh)] bg-cyan-200
      flex flex-col justify-center bg-cover bg-center"
       style={containerStyle}
     >

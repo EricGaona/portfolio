@@ -99,7 +99,7 @@ function Contact() {
                 {...register("name")}
               />
               {errors.name && (
-                <span className="text-red">{errors.name?.message}</span>
+                <span className="text-white bg-black font-bold">{errors.name?.message}</span>
               )}
               <input
                 type="email"
@@ -108,7 +108,7 @@ function Contact() {
                 {...register("email")}
               ></input>
               {errors.email && (
-                <span className="text-red">{errors.email?.message}</span>
+                <span className="text-white bg-black font-bold">{errors.email?.message}</span>
               )}
               <textarea
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
@@ -116,7 +116,7 @@ function Contact() {
                 {...register("message")}
               ></textarea>
               {errors.message && (
-                <span className="text-red">{errors.message?.message}</span>
+                <span className="text-white bg-black font-bold">{errors.message?.message}</span>
               )}
               <ReCAPTCHA
                 sitekey={SITE_KEY}
@@ -161,8 +161,9 @@ function Contact() {
         )}
         {success && (
           <Message
-            title={`Thanks for your message ${name}`}
+            title="Thanks for your message"
             message="We will get back to you as soon as possible!"
+            person={name}
           />
         )}
         {error && (
