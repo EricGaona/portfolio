@@ -8,10 +8,16 @@ import Mariauranga from "../assets/images/mariauranga.jpg";
 import Bobysuh from "../assets/images/bobysuh.jpg";
 import Commerce from "../assets/images/commerce.jpg";
 import Mail from "../assets/images/mail.jpg";
-
+import Network from "../assets/images/network.jpg";
 
 const projects = [
-
+  {
+    image: Network,
+    title: "Network",
+    description:
+      "This website was created to participate in the Code Institute's Hackathon in January. The theme was mental health and I am very proud that my group won second place. We used HTML, CSS, Bootstrap, Javascript and it is hosted on GitHub.",
+    url: "https://networkcs50-c6e6a53f09a0.herokuapp.com/",
+  },
   {
     image: Mail,
     title: "Mail",
