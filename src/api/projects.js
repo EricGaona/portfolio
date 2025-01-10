@@ -6,8 +6,26 @@ import Travelandculture from "../assets/images/travelandculture.jpg";
 import Asuakoworking from "../assets/images/asuakoworking.jpg";
 import Mariauranga from "../assets/images/mariauranga.jpg";
 import Bobysuh from "../assets/images/bobysuh.jpg";
+import Commerce from "../assets/images/commerce.jpg";
+import Mail from "../assets/images/mail.jpg";
+
 
 const projects = [
+
+  {
+    image: Mail,
+    title: "Mail",
+    description:
+      "This website was created to participate in the Code Institute's Hackathon in January. The theme was mental health and I am very proud that my group won second place. We used HTML, CSS, Bootstrap, Javascript and it is hosted on GitHub.",
+    url: "https://mailcs50-c8455b135c15.herokuapp.com/",
+  },
+  {
+    image: Commerce,
+    title: "Commerce",
+    description:
+      "This website was created to participate in the Code Institute's Hackathon in January. The theme was mental health and I am very proud that my group won second place. We used HTML, CSS, Bootstrap, Javascript and it is hosted on GitHub.",
+    url: "https://commerce-cs50-b05b33458d44.herokuapp.com/",
+  },
   {
     image: Clover,
     title: "Clover",
