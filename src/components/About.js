@@ -29,7 +29,7 @@ const About = () => {
           </p>
           <p className="font-normal text-black text-left text-2xl">
             I use a mixture of HTML, CSS, Bootstrap, Javascript, PHP, Python,
-            Flask, Django, MongoDB, MySQL and WordPress.{" "}
+            Flask, Django, React, Next.js, MongoDB, MySQL and WordPress.{" "}
             <a
               href="#footer"
               className="text-blue-600 hover:underline"

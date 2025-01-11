@@ -15,21 +15,21 @@ const projects = [
     image: Network,
     title: "Network",
     description:
-      "This website was created to participate in the Code Institute's Hackathon in January. The theme was mental health and I am very proud that my group won second place. We used HTML, CSS, Bootstrap, Javascript and it is hosted on GitHub.",
+      "This is a Threads-like social network website for making posts and following users. I used HTML, CSS, Bootstrap, Javascript, Python, Django, Github and it is hosted on Heroku.",
     url: "https://networkcs50-c6e6a53f09a0.herokuapp.com/",
   },
   {
     image: Mail,
     title: "Mail",
     description:
-      "This website was created to participate in the Code Institute's Hackathon in January. The theme was mental health and I am very proud that my group won second place. We used HTML, CSS, Bootstrap, Javascript and it is hosted on GitHub.",
+      "This is a front-end email client that makes API calls to send and receive emails. I used HTML, CSS, Bootstrap, Javascript, Python, Django, Github and it is hosted on Heroku.",
     url: "https://mailcs50-c8455b135c15.herokuapp.com/",
   },
   {
     image: Commerce,
     title: "Commerce",
     description:
-      "This website was created to participate in the Code Institute's Hackathon in January. The theme was mental health and I am very proud that my group won second place. We used HTML, CSS, Bootstrap, Javascript and it is hosted on GitHub.",
+      "This is an eBay-like e-commerce auction site that allows users to post auction listings, place bids, comment on listings, and add them to a watchlist. I used HTML, CSS, Bootstrap, Python, the framework Django and it is hosted on Heroku.",
     url: "https://commerce-cs50-b05b33458d44.herokuapp.com/",
   },
   {
