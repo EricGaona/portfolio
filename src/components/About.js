@@ -41,7 +41,7 @@ const About = () => {
             digital platform.
           </p>
           <p className="font-normal text-black text-left text-1xl">
-          I created this portfolio website using HTML, CSS, Tailwind, JavaScript, React, Github, and FormSubmit as a third-party API. It is hosted on Blacknight.
+          I created this portfolio website using HTML, CSS, Tailwind, JavaScript, React, GitHub, reCAPTCHA, Google Analytics, and FormSubmit as a third-party API. It is hosted on Blacknight.
           </p>
         </div>
         <img
