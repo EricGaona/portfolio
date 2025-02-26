@@ -9,8 +9,25 @@ import Bobysuh from "../assets/images/bobysuh.jpg";
 import Commerce from "../assets/images/commerce.jpg";
 import Mail from "../assets/images/mail.jpg";
 import Network from "../assets/images/network.jpg";
+import DevTree from "../assets/images/devTree.jpg";
+import Cashtrackr from "../assets/images/cashTrackr.jpg";
+
 
 const projects = [
+  {
+    image: Cashtrackr,
+    title: "CashTrackr",
+    description:
+      "CashTrackr is a user-friendly website for managing expenses, accessible from anywhere and backed by robust security. It is built with a modern tech stack, including React, Next.js, Tailwind, Node.js, Express, TypeScript, PostgreSQL, Sequelize, and Mailjet for email delivery",
+    url: "https://cashtrackr-frontend-deploy.vercel.app/",
+  },
+  {
+    image: DevTree,
+    title: "DevTree",
+    description:
+      "I created this website as part of an online course. It's a place where you can gather all your social networks and share them all in one link. In this project, I used React, React Query, Vite, Tailwind, Node.js, Express, TypeScript, MongoDB, Mongoose, and Cloudinary to host the images.",
+    url: "https://eric-devtree.netlify.app/",
+  },
   {
     image: Network,
     title: "Network",
