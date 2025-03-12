@@ -28,8 +28,9 @@ const About = () => {
             even improve your old one.
           </p>
           <p className="font-normal text-black text-left mb-5 text-1xl">
-            I use a mixture of HTML, CSS, Bootstrap, Javascript, PHP, Python,
-            Flask, Django, React, Next.js, MongoDB, MySQL and WordPress.{" "}
+            I use a mixture of HTML, CSS, Bootstrap, Tailwind CSS, Javascript, React, Next.js, Vite, Node.js, TypeScript, Express, NestJS,
+            Python, PHP, Flask, Django, MongoDB, MySQL, PostgreSQL, TypeORM and WordPress.{" "}
+            
             <a
               href="#footer"
               className="text-blue-600 hover:underline"
