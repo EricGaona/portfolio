@@ -28,7 +28,7 @@ const About = () => {
             even improve your old one.
           </p>
           <p className="font-normal text-black text-left mb-5 text-1xl">
-            I use a mixture of HTML, CSS, Bootstrap, Tailwind CSS, Javascript, React, Next.js, Vite, Node.js, TypeScript, Express, NestJS,
+            I use a mixture of HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, React, Next.js, Vite, Node.js, TypeScript, Express, NestJS,
             Python, PHP, Flask, Django, MongoDB, MySQL, PostgreSQL, TypeORM and WordPress.{" "}
             
             <a
