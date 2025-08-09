@@ -10,7 +10,7 @@ import * as Yup from "yup";
 
 function Contact() {
   // Formulario
-  const SITE_KEY = "6LcKazIoAAAAAHHFrle4ETJbip5vnE91LXFFtq9G";
+  const SITE_KEY = "6Lf4-58rAAAAAAr3eNMOMxYObPnlujrvVo1Z5aHx";
   const [name, setName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
