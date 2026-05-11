@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.headers.post["Content-Type"] = "application/json";
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 const EMAIL_BASE = "ericgaona0413@gmail.com";
 
@@ -13,3 +13,4 @@ function sendEmail({ name, email, message }) {
 }
 
 export { sendEmail };
+
