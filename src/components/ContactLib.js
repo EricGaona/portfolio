@@ -58,8 +58,8 @@ function Contact() {
     setIsLoading(true);
     const response = await sendEmail({ name, email, message });
     console.log("Response", response);
-
-    if (response.data.success === "true") {
+// removing data since it is not using axios 
+    if (response.success === "true") {
       setIsLoading(false);
       setName(name);
       setSuccess(true);
