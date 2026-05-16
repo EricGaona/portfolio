@@ -79,7 +79,7 @@ function Contact() {
 
   return (
     <section id="contact" className="pt-24">
-      <h2 className="font-bold text-2xl">Contact - test</h2>
+      <h2 className="font-bold text-2xl">Contact</h2>
       <div
         className={`relative flex justify-center my-10 bg-blue-200`}
         style={containerStyle}
